@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Femicide and Gender-Based Violence Dashboard</title>
+    <!-- Basic styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 1.5rem 3rem;
+            background-color: #f5f5f5;
+        }
+        header {
+            padding: 1.5rem 0;
+        }
+        h1, h2 {
+            margin-bottom: 0.5rem;
+        }
+        .section {
+            background: #ffffff;
+            margin: 1rem 0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+        }
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+        table {
+            width: 100%;
+        }
+    </style>
+
+    <!-- DataTables (for tables, optional for later use) -->
+    <link rel="stylesheet"
+          href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+<header>
+    <h1>Femicide and Gender-Based Violence Dashboard</h1>
+    <p>
+        Comparative visualisation of femicide trends, SDG 5 (gender equality) performance,
+        and media attention in Ireland, South Africa, and the United States.
+    </p>
+</header>
+
+<div class="section">
+    <h2>Long-Term Female Homicide Counts</h2>
+    <p>This chart shows the absolute number of female homicide victims over time across the three countries.</p>
+    <iframe src="charts/long_term_female_homicide_counts.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>Long-Term Female Homicide Rates</h2>
+    <p>This chart shows the rate of female homicides per 100,000 population over time.</p>
+    <iframe src="charts/long_term_female_homicide_rates.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>Media Mentions of Femicide and Gender-Based Violence</h2>
+    <p>This chart compares media attention to the terms “femicide” and “gender-based violence”.</p>
+    <iframe src="charts/media_mentions_femicide_gbv_bar_chart.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>SDG 5 Progress Over Time</h2>
+    <p>This chart tracks SDG 5 (gender equality) scores for each country.</p>
+    <iframe src="charts/sdg_goal5_progress_over_time.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>Femicide and SDG 5 Overlay</h2>
+    <p>This chart overlays SDG 5 scores and female homicide rates on dual axes.</p>
+    <iframe src="charts/multi_country_femicide_sdg5_overlay_US_included.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>Relationship Between SDG 5 and Female Homicide Rates</h2>
+    <p>This regression chart explores the association between SDG 5 scores and female homicide rates.</p>
+    <iframe src="charts/sdg5_vs_female_homicide_rate_regression.html"></iframe>
+</div>
+
+<!-- Example DataTable – you can replace this later with real data -->
+<div class="section">
+    <h2>Example Summary Table (placeholder)</h2>
+    <p>You can replace this with your own CSV-based table later.</p>
+    <table id="summary-table" class="display">
+        <thead>
+        <tr>
+            <th>Country</th>
+            <th>Indicator</th>
+            <th>Value</th>
+            <th>Year</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Ireland</td>
+            <td>Latest femicide rate per 100,000</td>
+            <td>0.42</td>
+            <td>2023</td>
+        </tr>
+        <tr>
+            <td>South Africa</td>
+            <td>Latest femicide rate per 100,000</td>
+            <td>12.20</td>
+            <td>2022</td>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td>Latest femicide rate per 100,000</td>
+            <td>2.55</td>
+            <td>2023</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- JS for DataTables -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const table = document.getElementById('summary-table');
+        if (table) {
+            new DataTable('#summary-table');
+        }
+    });
+</script>
+</body>
+</html>
