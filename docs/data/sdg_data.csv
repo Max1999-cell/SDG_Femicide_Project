@@ -1,0 +1,70 @@
+country_code,country,year,sdg_index_score,goal_5_score
+IRL,Ireland,2000,74.4,65.4
+IRL,Ireland,2001,74.5,65.4
+IRL,Ireland,2002,74.7,66.1
+IRL,Ireland,2003,75.1,66.2
+IRL,Ireland,2004,75.5,66.2
+IRL,Ireland,2005,75.7,66.3
+IRL,Ireland,2006,76.2,66.4
+IRL,Ireland,2007,76.7,66.5
+IRL,Ireland,2008,77.2,66.6
+IRL,Ireland,2009,77.2,67.1
+IRL,Ireland,2010,77.6,67.2
+IRL,Ireland,2011,78.4,67.7
+IRL,Ireland,2012,78.9,67.7
+IRL,Ireland,2013,79.2,72.4
+IRL,Ireland,2014,79.7,72.3
+IRL,Ireland,2015,79.3,72.5
+IRL,Ireland,2016,78.5,75.9
+IRL,Ireland,2017,79.1,76.1
+IRL,Ireland,2018,78.8,76.3
+IRL,Ireland,2019,79.3,76.4
+IRL,Ireland,2020,79.3,76.5
+IRL,Ireland,2021,79.4,77.2
+IRL,Ireland,2022,80.1,77.7
+ZAF,South Africa,2000,59.1,71.9
+ZAF,South Africa,2001,59.0,71.8
+ZAF,South Africa,2002,59.5,72.4
+ZAF,South Africa,2003,59.1,72.0
+ZAF,South Africa,2004,59.3,74.3
+ZAF,South Africa,2005,59.3,73.5
+ZAF,South Africa,2006,59.3,73.6
+ZAF,South Africa,2007,59.4,74.0
+ZAF,South Africa,2008,59.7,73.7
+ZAF,South Africa,2009,60.4,80.1
+ZAF,South Africa,2010,60.2,80.1
+ZAF,South Africa,2011,60.9,79.7
+ZAF,South Africa,2012,61.1,79.4
+ZAF,South Africa,2013,61.5,81.7
+ZAF,South Africa,2014,61.7,81.4
+ZAF,South Africa,2015,62.1,81.6
+ZAF,South Africa,2016,62.2,81.4
+ZAF,South Africa,2017,63.0,82.0
+ZAF,South Africa,2018,62.5,78.2
+ZAF,South Africa,2019,63.2,76.7
+ZAF,South Africa,2020,63.8,76.8
+ZAF,South Africa,2021,63.9,76.7
+ZAF,South Africa,2022,64.0,76.8
+USA,United States,2000,71.5,70.5
+USA,United States,2001,71.6,70.6
+USA,United States,2002,71.6,70.5
+USA,United States,2003,71.8,70.8
+USA,United States,2004,72.0,71.2
+USA,United States,2005,72.0,71.4
+USA,United States,2006,72.2,72.3
+USA,United States,2007,72.6,72.5
+USA,United States,2008,72.4,72.6
+USA,United States,2009,73.0,72.6
+USA,United States,2010,73.4,72.6
+USA,United States,2011,73.7,72.6
+USA,United States,2012,73.8,73.1
+USA,United States,2013,73.8,70.9
+USA,United States,2014,74.1,71.7
+USA,United States,2015,74.0,71.6
+USA,United States,2016,74.4,71.5
+USA,United States,2017,74.7,72.2
+USA,United States,2018,74.4,74.3
+USA,United States,2019,74.9,74.4
+USA,United States,2020,75.6,76.5
+USA,United States,2021,76.0,76.6
+USA,United States,2022,75.9,76.8

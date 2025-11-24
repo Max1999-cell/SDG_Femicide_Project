@@ -1,0 +1,49 @@
+Iso3_code,Country,Region,Subregion,Indicator,Dimension,Category,Sex,Age,Year,Unit of measurement,VALUE,Source
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2015,Counts,7.0,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2016,Counts,2.0,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2017,Counts,15.0,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2018,Counts,10.0,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2019,Counts,7.0,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2020,Counts,6.0,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2021,Counts,7.0,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2022,Counts,11.0,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2023,Counts,11.0,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2015,"Rate per 100,000 population",0.294604859128374,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2016,"Rate per 100,000 population",0.0833031359465527,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2017,"Rate per 100,000 population",0.61756147206893,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2018,"Rate per 100,000 population",0.40657405858285,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2019,"Rate per 100,000 population",0.281113659874961,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2020,"Rate per 100,000 population",0.238526478824414,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2021,"Rate per 100,000 population",0.275720432873202,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2022,"Rate per 100,000 population",0.426365926230555,MD/SDG/CTS
+IRL,Ireland,Europe,Northern Europe,Victims of intentional homicide,Total,Total,Female,Total,2023,"Rate per 100,000 population",0.419200527430482,MD/SDG/CTS
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2016,Counts,2639.0,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2017,Counts,2930.0,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2018,Counts,2771.0,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2019,Counts,2695.0,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2021,Counts,3255.0,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2022,Counts,3914.0,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2016,"Rate per 100,000 population",8.95213496291589,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2017,"Rate per 100,000 population",9.85525638760623,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2018,"Rate per 100,000 population",9.17189884438212,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2019,"Rate per 100,000 population",8.779744663198,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2021,"Rate per 100,000 population",10.2846103996843,NP/NP Adjusted
+ZAF,South Africa,Africa,Sub-Saharan Africa,Victims of intentional homicide,Total,Total,Female,Total,2022,"Rate per 100,000 population",12.203575722517,NP/NP Adjusted
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2015,Counts,3333.70281543274,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2016,Counts,3716.87430966798,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2017,Counts,3694.1360796112,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2018,Counts,3694.43167305236,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2019,Counts,3587.09108568962,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2020,Counts,4349.54624978836,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2021,Counts,5080.0,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2022,Counts,4771.0,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2023,Counts,4359.0,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2015,"Rate per 100,000 population",2.04935169086202,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2016,"Rate per 100,000 population",2.26579014605022,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2017,"Rate per 100,000 population",2.23336677382323,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2018,"Rate per 100,000 population",2.21624536158089,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2019,"Rate per 100,000 population",2.1359010481462,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2020,"Rate per 100,000 population",2.5778746719936,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2021,"Rate per 100,000 population",3.00370199175124,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2022,"Rate per 100,000 population",2.80876215814734,UNSDC/NP/CTS
+USA,United States of America,Americas,Northern America,Victims of intentional homicide,Total,Total,Female,Total,2023,"Rate per 100,000 population",2.55078416556168,UNSDC/NP/CTS
