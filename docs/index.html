@@ -131,6 +131,21 @@
             border-radius: 6px;
         }
 
+        .detail {
+            margin-top: 1rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .detail p, .detail ul {
+            font-size: 0.95rem;
+            line-height: 1.4rem;
+        }
+
+        .detail ul {
+            padding-left: 1.2rem;
+        }
+
         @media (max-width: 700px) {
             .header-inner {
                 flex-direction: column;
@@ -170,18 +185,8 @@
             font-size: 0.85rem;
             color: var(--text-muted);
         }
-
-        #descriptions p, #descriptions ul {
-            font-size: 0.95rem;
-            line-height: 1.4rem;
-        }
-
-        #descriptions ul {
-            padding-left: 1.2rem;
-        }
     </style>
 
-    <!-- DataTables styles (for the table at the bottom) -->
     <link rel="stylesheet"
           href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 </head>
@@ -199,7 +204,6 @@
             <a href="#overlay">Overlay</a>
             <a href="#regression">Regression</a>
             <a href="#media">Media</a>
-            <a href="#descriptions">Graph descriptions</a>
             <a href="#summary-table">Summary table</a>
             <a href="#about">About</a>
         </nav>
@@ -222,167 +226,165 @@
         </p>
     </section>
 
-    <!-- Chart sections (keep your existing structure and text) -->
-
+    <!-- 1. Counts -->
     <section class="section" id="counts">
         <h2>Long-Term Female Homicide Counts</h2>
         <p>This chart shows the absolute number of female homicide victims over time across the three countries.</p>
         <iframe src="charts/long_term_female_homicide_counts.html"
                 title="Long-Term Female Homicide Counts"></iframe>
         <small>Source: combined female homicide statistics compiled for this project.</small>
+
+        <div class="detail">
+            <p><strong>What the figure shows:</strong><br>
+                This visualisation presents the absolute number of female homicide victims per year in Ireland,
+                South Africa, and the United States. It displays country-specific trajectories from 2015 onwards,
+                enabling a direct comparison of the scale of femicides across national contexts. Each country is
+                represented by a separate line, with annual data points marked.</p>
+            <p><strong>Major findings:</strong></p>
+            <ul>
+                <li>South Africa reports the highest absolute femicide counts throughout the observed period, with annual totals often exceeding 2,500 victims.</li>
+                <li>The United States displays persistently high counts as well, ranging between roughly 3,300 and 5,000 victims per year.</li>
+                <li>Ireland’s absolute numbers are very low in comparison, typically varying between 2 and 15 victims annually.</li>
+                <li>All three countries show fluctuations, with notable increases in recent years for South Africa and the United States.</li>
+            </ul>
+            <p><strong>Data used:</strong><br>
+                ireland_female_homicide_counts.csv, south_africa_female_homicide_counts.csv, united_states_female_homicide_counts.csv
+            </p>
+        </div>
     </section>
 
+    <!-- 2. Rates -->
     <section class="section" id="rates">
         <h2>Long-Term Female Homicide Rates</h2>
         <p>This chart shows the rate of female homicides per 100,000 population over time.</p>
         <iframe src="charts/long_term_female_homicide_rates.html"
                 title="Long-Term Female Homicide Rates per 100,000 population"></iframe>
         <small>Source: combined female homicide statistics; population denominators from official sources.</small>
+
+        <div class="detail">
+            <p><strong>What the figure shows:</strong><br>
+                This chart depicts the annual femicide rate per 100,000 women for Ireland, South Africa, and the United States.
+                By presenting population-adjusted rates, it enables a more accurate comparison of national femicide burdens across
+                countries with vastly different population sizes.</p>
+            <p><strong>Major findings:</strong></p>
+            <ul>
+                <li>South Africa consistently has the highest rates, with several years showing values above 9 per 100,000 women.</li>
+                <li>The United States shows medium-level rates, generally between 2 and 3 per 100,000 women.</li>
+                <li>Ireland’s rate is extremely low and remains below 1 per 100,000 women for the entire period.</li>
+                <li>Rates in South Africa rise sharply in 2021 and 2022, indicating a worsening situation.</li>
+                <li>Rates in Ireland and the United States remain more stable but show modest upward movements in the most recent years.</li>
+            </ul>
+            <p><strong>Data used:</strong><br>
+                ireland_female_homicide_rates.csv, south_africa_female_homicide_rates.csv, united_states_female_homicide_rates.csv
+            </p>
+        </div>
     </section>
 
+    <!-- 3. Media -->
     <section class="section" id="media">
         <h2>Media Mentions of Femicide and Gender-Based Violence</h2>
         <p>This chart compares media attention to the terms “femicide” and “gender-based violence”.</p>
         <iframe src="charts/media_mentions_femicide_gbv_bar_chart.html"
                 title="Media Mentions of Femicide and Gender-Based Violence"></iframe>
         <small>Source: media search data collected for this project.</small>
+
+        <div class="detail">
+            <p><strong>What the figure shows:</strong><br>
+                This visualisation aggregates yearly counts of media mentions for two terms—“femicide” and “gender-based violence”—
+                across Ireland, South Africa, and the United States. It presents the results as grouped bar charts, with separate panels
+                for each country.</p>
+            <p><strong>Major findings:</strong></p>
+            <ul>
+                <li>Media attention varies enormously between countries.</li>
+                <li>The United States generates the highest number of mentions, especially regarding “gender-based violence,” with annual totals exceeding 700 cases in the most recent years.</li>
+                <li>South Africa shows substantial media coverage as well, particularly for “gender-based violence,” but lower than the United States.</li>
+                <li>Ireland exhibits comparatively low media attention for both terms, though a noticeable uptick in mentions occurs after 2020.</li>
+                <li>Mentions of “gender-based violence” consistently exceed those for “femicide” in all three countries.</li>
+            </ul>
+            <p><strong>Data used:</strong><br>
+                Irland_femicide.csv.csv, Irland_gender_based_violence.csv.csv, Sydafrika_femicide.csv.csv,
+                Sydafrika_gender_based_violence.csv.csv, USA_femicide.csv.csv, USA_gender_based_violence.csv.csv
+            </p>
+        </div>
     </section>
 
+    <!-- 4. SDG 5 progress -->
     <section class="section" id="sdg5">
         <h2>SDG 5 Progress Over Time</h2>
         <p>This chart tracks SDG 5 (gender equality) scores for each country.</p>
         <iframe src="charts/sdg_goal5_progress_over_time.html"
                 title="SDG Goal 5 Progress Over Time"></iframe>
         <small>Source: SDG Index (Goal 5 sub-score).</small>
+
+        <div class="detail">
+            <p><strong>What the figure shows:</strong><br>
+                This line chart tracks SDG 5 (gender equality) scores for Ireland, South Africa, and the United States from 2000 to 2022.
+                It provides a longitudinal view of institutional gender-equality commitments and progress.</p>
+            <p><strong>Major findings:</strong></p>
+            <ul>
+                <li>Ireland and the United States show gradual, sustained increases in SDG 5 scores over the entire period, reflecting ongoing policy and institutional reforms.</li>
+                <li>South Africa begins at a relatively high score but shows moderate fluctuations across years, including some decline around 2018–2020.</li>
+                <li>All three countries converge at broadly similar SDG 5 levels by 2022 (mid-70s range).</li>
+            </ul>
+            <p><strong>Data used:</strong><br>
+                sdg_data.csv
+            </p>
+        </div>
     </section>
 
+    <!-- 5. Overlay -->
     <section class="section" id="overlay">
         <h2>Femicide and SDG 5 Overlay</h2>
         <p>This chart overlays SDG 5 scores and female homicide rates on dual axes.</p>
         <iframe src="charts/multi_country_femicide_sdg5_overlay_US_included.html"
                 title="Femicide and SDG 5 Overlay"></iframe>
         <small>Source: SDG Index (Goal 5) and combined female homicide statistics.</small>
+
+        <div class="detail">
+            <p><strong>What the figure shows:</strong><br>
+                This dual-axis line chart overlays two types of indicators for each country—SDG 5 performance (institutional gender-equality score)
+                and femicide rates per 100,000 women—displayed across time. SDG 5 scores are shown on the left axis, while femicide rates are plotted
+                on the right axis.</p>
+            <p><strong>Major findings:</strong></p>
+            <ul>
+                <li>Ireland and the United States show steady progress on SDG 5 scores over time, but femicide rates do not consistently decline in tandem.</li>
+                <li>South Africa displays higher volatility, with SDG 5 scores fluctuating more strongly and femicide rates remaining consistently elevated.</li>
+                <li>No country shows a clear one-to-one correspondence between improvements in institutional gender-equality measures and decreases in femicide rates.</li>
+                <li>The divergence between structural gender-equality indicators and lethal violence outcomes is particularly pronounced in South Africa.</li>
+            </ul>
+            <p><strong>Data used:</strong><br>
+                sdg_data.csv, ireland_female_homicide_rates.csv, south_africa_female_homicide_rates.csv, united_states_female_homicide_rates.csv
+            </p>
+        </div>
     </section>
 
+    <!-- 6. Regression -->
     <section class="section" id="regression">
         <h2>Relationship Between SDG 5 and Female Homicide Rates</h2>
         <p>This regression chart explores the association between SDG 5 scores and female homicide rates.</p>
         <iframe src="charts/sdg5_vs_female_homicide_rate_regression.html"
                 title="Regression: SDG 5 vs. Female Homicide Rate"></iframe>
         <small>Source: SDG Index (Goal 5) and combined female homicide statistics.</small>
+
+        <div class="detail">
+            <p><strong>What the figure shows:</strong><br>
+                This scatter plot explores the association between SDG 5 scores and femicide rates across the three countries. Each point
+                represents a country–year combination. A linear regression line (overall OLS trendline) is included to summarise the global relationship.</p>
+            <p><strong>Major findings:</strong></p>
+            <ul>
+                <li>Ireland clusters in the upper-range SDG 5 scores with extremely low femicide rates.</li>
+                <li>South Africa clusters in the mid-to-high SDG 5 range but with very high femicide rates, showing that strong institutional frameworks do not automatically translate into lower lethal violence against women.</li>
+                <li>The United States sits between Ireland and South Africa on both dimensions.</li>
+                <li>The regression line has a positive slope, indicating that higher SDG 5 scores are not associated with lower femicide rates in this dataset.</li>
+                <li>The R² value is low (around 0.28), indicating weak explanatory power: institutional gender-equality scores do not reliably predict femicide rates.</li>
+            </ul>
+            <p><strong>Data used:</strong><br>
+                sdg_data.csv, ireland_female_homicide_rates.csv, south_africa_female_homicide_rates.csv, united_states_female_homicide_rates.csv
+            </p>
+        </div>
     </section>
 
-    <!-- Detailed descriptions section (using your long text) -->
-
-    <section class="section" id="descriptions">
-        <h2>Detailed Graph Descriptions</h2>
-
-        <h3>1. Long-Term Trends in Female Homicide Counts</h3>
-        <p><strong>File:</strong> long_term_female_homicide_counts.html</p>
-        <p><strong>What the figure shows:</strong><br>
-            This visualisation presents the absolute number of female homicide victims per year in Ireland,
-            South Africa, and the United States. It displays country-specific trajectories from 2015 onwards,
-            enabling a direct comparison of the scale of femicides across national contexts. Each country is
-            represented by a separate line, with annual data points marked.</p>
-        <p><strong>Major findings:</strong></p>
-        <ul>
-            <li>South Africa reports the highest absolute femicide counts throughout the observed period, with annual totals often exceeding 2,500 victims.</li>
-            <li>The United States displays persistently high counts as well, ranging between roughly 3,300 and 5,000 victims per year.</li>
-            <li>Ireland’s absolute numbers are very low in comparison, typically varying between 2 and 15 victims annually.</li>
-            <li>All three countries show fluctuations, with notable increases in recent years for South Africa and the United States.</li>
-        </ul>
-        <p><strong>Data used:</strong><br>
-            ireland_female_homicide_counts.csv, south_africa_female_homicide_counts.csv, united_states_female_homicide_counts.csv
-        </p>
-
-        <h3>2. Long-Term Trends in Female Homicide Rates</h3>
-        <p><strong>File:</strong> long_term_female_homicide_rates.html</p>
-        <p><strong>What the figure shows:</strong><br>
-            This chart depicts the annual femicide rate per 100,000 women for Ireland, South Africa, and the United States.
-            By presenting population-adjusted rates, it enables a more accurate comparison of national femicide burdens across
-            countries with vastly different population sizes.</p>
-        <p><strong>Major findings:</strong></p>
-        <ul>
-            <li>South Africa consistently has the highest rates, with several years showing values above 9 per 100,000 women.</li>
-            <li>The United States shows medium-level rates, generally between 2 and 3 per 100,000 women.</li>
-            <li>Ireland’s rate is extremely low and remains below 1 per 100,000 women for the entire period.</li>
-            <li>Rates in South Africa rise sharply in 2021 and 2022, indicating a worsening situation.</li>
-            <li>Rates in Ireland and the United States remain more stable but show modest upward movements in the most recent years.</li>
-        </ul>
-        <p><strong>Data used:</strong><br>
-            ireland_female_homicide_rates.csv, south_africa_female_homicide_rates.csv, united_states_female_homicide_rates.csv
-        </p>
-
-        <h3>3. Media Mentions of “Femicide” and “Gender-Based Violence” by Country and Year</h3>
-        <p><strong>File:</strong> media_mentions_femicide_gbv_bar_chart.html</p>
-        <p><strong>What the figure shows:</strong><br>
-            This visualisation aggregates yearly counts of media mentions for two terms—“femicide” and “gender-based violence”—
-            across Ireland, South Africa, and the United States. It presents the results as grouped bar charts, with separate panels
-            (facets) for each country.</p>
-        <p><strong>Major findings:</strong></p>
-        <ul>
-            <li>Media attention varies enormously between countries.</li>
-            <li>The United States generates the highest number of mentions, especially regarding “gender-based violence,” with annual totals exceeding 700 cases in the most recent years.</li>
-            <li>South Africa shows substantial media coverage as well, particularly for “gender-based violence,” but lower than the United States.</li>
-            <li>Ireland exhibits comparatively low media attention for both terms, though a noticeable uptick in mentions occurs after 2020.</li>
-            <li>Mentions of “gender-based violence” consistently exceed those for “femicide” in all three countries.</li>
-        </ul>
-        <p><strong>Data used:</strong><br>
-            Irland_femicide.csv.csv, Irland_gender_based_violence.csv.csv, Sydafrika_femicide.csv.csv,
-            Sydafrika_gender_based_violence.csv.csv, USA_femicide.csv.csv, USA_gender_based_violence.csv.csv
-        </p>
-
-        <h3>4. Multi-Country Femicide and SDG 5 Overlay (Including United States)</h3>
-        <p><strong>File:</strong> multi_country_femicide_sdg5_overlay_US_included.html</p>
-        <p><strong>What the figure shows:</strong><br>
-            This dual-axis line chart overlays two types of indicators for each country—SDG 5 performance (institutional gender-equality score)
-            and femicide rates per 100,000 women—displayed across time. SDG 5 scores are shown on the left axis, while femicide rates are plotted
-            on the right axis.</p>
-        <p><strong>Major findings:</strong></p>
-        <ul>
-            <li>Ireland and the United States show steady progress on SDG 5 scores over time, but femicide rates do not consistently decline in tandem.</li>
-            <li>South Africa displays higher volatility, with SDG 5 scores fluctuating more strongly and femicide rates remaining consistently elevated.</li>
-            <li>No country shows a clear one-to-one correspondence between improvements in institutional gender-equality measures and decreases in femicide rates.</li>
-            <li>The divergence between structural gender-equality indicators and lethal violence outcomes is particularly pronounced in South Africa.</li>
-        </ul>
-        <p><strong>Data used:</strong><br>
-            sdg_data.csv, ireland_female_homicide_rates.csv, south_africa_female_homicide_rates.csv, united_states_female_homicide_rates.csv
-        </p>
-
-        <h3>5. SDG Goal 5 Progress Over Time</h3>
-        <p><strong>File:</strong> sdg_goal5_progress_over_time.html</p>
-        <p><strong>What the figure shows:</strong><br>
-            This line chart tracks SDG 5 (gender equality) scores for Ireland, South Africa, and the United States from 2000 to 2022.
-            It provides a longitudinal view of institutional gender-equality commitments and progress.</p>
-        <p><strong>Major findings:</strong></p>
-        <ul>
-            <li>Ireland and the United States show gradual, sustained increases in SDG 5 scores over the entire period, reflecting ongoing policy and institutional reforms.</li>
-            <li>South Africa begins at a relatively high score but shows moderate fluctuations across years, including some decline around 2018–2020.</li>
-            <li>All three countries converge at broadly similar SDG 5 levels by 2022 (mid-70s range).</li>
-        </ul>
-        <p><strong>Data used:</strong><br>
-            sdg_data.csv
-        </p>
-
-        <h3>6. Relationship Between SDG 5 Performance and Female Homicide Rates (Regression Analysis)</h3>
-        <p><strong>File:</strong> sdg5_vs_female_homicide_rate_regression.html</p>
-        <p><strong>What the figure shows:</strong><br>
-            This scatter plot explores the association between SDG 5 scores and femicide rates across the three countries. Each point
-            represents a country–year combination. A linear regression line (overall OLS trendline) is included to summarise the global relationship.</p>
-        <p><strong>Major findings:</strong></p>
-        <ul>
-            <li>Ireland clusters in the upper-range SDG 5 scores with extremely low femicide rates.</li>
-            <li>South Africa clusters in the mid-to-high SDG 5 range but with very high femicide rates, showing that strong institutional frameworks do not automatically translate into lower lethal violence against women.</li>
-            <li>The United States sits between Ireland and South Africa on both dimensions.</li>
-            <li>The regression line has a positive slope, indicating that higher SDG 5 scores are not associated with lower femicide rates in this dataset.</li>
-            <li>The R² value is low (around 0.28), indicating weak explanatory power: institutional gender-equality scores do not reliably predict femicide rates.</li>
-        </ul>
-        <p><strong>Data used:</strong><br>
-            sdg_data.csv, ireland_female_homicide_rates.csv, south_africa_female_homicide_rates.csv, united_states_female_homicide_rates.csv
-        </p>
-    </section>
-
-    <!-- Summary table and about sections from your improved layout -->
+    <!-- Summary table and About -->
 
     <section class="section" id="summary-table">
         <h2>Summary Table (example)</h2>
@@ -445,7 +447,6 @@
     Last updated by Max. Hosted on GitHub Pages.
 </footer>
 
-<!-- DataTables scripts -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 <script>
