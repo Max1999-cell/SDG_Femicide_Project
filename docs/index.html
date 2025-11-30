@@ -146,6 +146,16 @@
             padding-left: 1.2rem;
         }
 
+        /* Image sections */
+        .image-section-img {
+            width: 100%;
+            max-width: 900px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
         @media (max-width: 700px) {
             .header-inner {
                 flex-direction: column;
@@ -470,9 +480,27 @@
         </div>
     </section>
     
-<div style="text-align:center; margin-top:30px;">
-    <img src="img/sdgMap.png" alt="SDG Map" style="width:60%; border-radius:8px;">
-</div>
+    <!-- SDG map image section -->
+    <section class="section" id="sdg-map-image">
+        <h2>SDG 5 Global Map</h2>
+        <p>
+            Static map illustration of SDG 5 performance used in the analysis.
+        </p>
+        <img src="img/sdgMap.png"
+             alt="SDG 5 map"
+             class="image-section-img">
+    </section>
+
+    <!-- Gender graph image section -->
+    <section class="section" id="gender-graph-image">
+        <h2>Gender Equality Comparison Graph</h2>
+        <p>
+            Static graph showing gender-equality scores across selected countries.
+        </p>
+        <img src="img/genderGraph.png"
+             alt="Gender equality graph"
+             class="image-section-img">
+    </section>
 
     <!-- 6. Regression -->
     <section class="section" id="regression">
@@ -867,4 +895,3 @@
 
 </body>
 </html>
-```
