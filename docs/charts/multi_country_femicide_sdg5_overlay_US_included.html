@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Multi-Country Femicide and SDG 5 Overlay</title>
+  <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+</head>
+<body>
+<div id="femicide-sdg5-overlay" style="width:100%;height:100%;min-height:520px;"></div>
+
+<script>
+// Colors:
+var colors = {
+  ireland_light: '#99cc99',
+  ireland_dark:  '#006600',
+  sa_light:      '#99ccff',
+  sa_dark:       '#0033cc',
+  us_light:      '#ff9999',
+  us_dark:       '#cc0000'
+};
+
+var data = [
+  {
+    x: [2015,2016,2017,2018,2019,2020,2021,2022],
+    y: [72.5,75.9,76.1,76.3,76.4,76.5,77.2,77.7],
+    mode: 'lines+markers',
+    line: {color: colors.ireland_light, width: 3},
+    marker: {color: colors.ireland_light},
+    name: 'Ireland – SDG 5 score',
+    yaxis: 'y1',
+    type: 'scatter'
+  },
+  {
+    x: [2015,2016,2017,2018,2019,2020,2021,2022],
+    y: [0.294605,0.083303,0.617561,0.406574,0.281114,0.238526,0.27572,0.426366],
+    mode: 'lines+markers',
+    line: {color: colors.ireland_dark, width: 3},
+    marker: {color: colors.ireland_dark},
+    name: 'Ireland – femicide rate',
+    yaxis: 'y2',
+    type: 'scatter'
+  },
+  {
+    x: [2016,2017,2018,2019,2021,2022],
+    y: [81.4,82.0,78.2,76.7,76.7,76.8],
+    mode: 'lines+markers',
+    line: {color: colors.sa_light, width: 3},
+    marker: {color: colors.sa_light},
+    name: 'South Africa – SDG 5 score',
+    yaxis: 'y1',
+    type: 'scatter'
+  },
+  {
+    x: [2016,2017,2018,2019,2021,2022],
+    y: [8.952135,9.855256,9.171899,8.779745,10.28461,12.203576],
+    mode: 'lines+markers',
+    line: {color: colors.sa_dark, width: 3},
+    marker: {color: colors.sa_dark},
+    name: 'South Africa – femicide rate',
+    yaxis: 'y2',
+    type: 'scatter'
+  },
+  {
+    x: [2015,2016,2017,2018,2019,2020,2021,2022],
+    y: [71.6,71.5,72.2,74.3,74.4,76.5,76.6,76.8],
+    mode: 'lines+markers',
+    line: {color: colors.us_light, width: 3},
+    marker: {color: colors.us_light},
+    name: 'United States – SDG 5 score',
+    yaxis: 'y1',
+    type: 'scatter'
+  },
+  {
+    x: [2015,2016,2017,2018,2019,2020,2021,2022],
+    y: [2.049352,2.26579,2.233367,2.216245,2.135901,2.577875,3.003702,2.808762],
+    mode: 'lines+markers',
+    line: {color: colors.us_dark, width: 3},
+    marker: {color: colors.us_dark},
+    name: 'United States – femicide rate',
+    yaxis: 'y2',
+    type: 'scatter'
+  }
+];
+
+var layout = {
+  title: 'Multi-Country Femicide and SDG 5 Overlay',
+  xaxis: { title: 'Year' },
+  yaxis: { title: 'SDG 5 score', side: 'left' },
+  yaxis2: {
+    title: 'Femicide rate per 100,000 women',
+    overlaying: 'y',
+    side: 'right'
+  },
+  legend: {
+    orientation: 'h',
+    x: 0,
+    y: -0.25
+  },
+  margin: {t: 60, r: 60, b: 100, l: 60}
+};
+
+Plotly.newPlot('femicide-sdg5-overlay', data, layout, {responsive: true});
+</script>
+</body>
+</html>
